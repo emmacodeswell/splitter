@@ -13,6 +13,9 @@ function App() {
   const handleBill = stateSetter(setBill)
   const handleNumPeople = stateSetter(setNumPeople)
 
+  const tipPerPerson = bill * tip / 100 / numPeople
+  const totalPerPerson = bill / numPeople + tipPerPerson 
+
   return (
     <div>
       <h1>
