@@ -20,20 +20,20 @@ function App() {
       </h1>
       <label>
         Bill
-        <input type="number" />
+        <input type="number" onChange={handleBill}/>
       </label>
       <label>
         Select Tip %
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
-        <input type="number" />
+        <input type="radio" name="tip" value="5" onChange={handleTip}/>
+        <input type="radio" name="tip" value="10" onChange={handleTip}/>
+        <input type="radio" name="tip" value="15" onChange={handleTip}/>
+        <input type="radio" name="tip" value="25" onChange={handleTip}/>
+        <input type="radio" name="tip" value="50" onChange={handleTip}/>
+        <input type="number" onChange={handleTip}/>
       </label>
       <label>
         Number of People
-        <input type="number" />
+        <input type="number" onChange={handleNumPeople}/>
       </label>
       <div className="results">
         <label>
