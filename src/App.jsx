@@ -9,9 +9,9 @@ const initialState = {
 }
 
 function App() {
-  const [userInput, setUserInput] = useState(initialState)
+  const [numPeople, setNumPeople] = useState(0)
   const [tip, setTip] = useState(0)
-  const [total, setTotal] = useState(0)
+  const [bill, setBill] = useState(0)
 
   return (
     <div>
