@@ -42,12 +42,12 @@ function App() {
         <label>
           Tip Amount
           <small>/ person</small>
-          <output>100</output>
+          <output>{tipPerPerson}</output>
         </label>
         <label>
           Total
           <small>/ person</small>
-          <output>888</output>
+          <output>{totalPerPerson}</output>
         </label>
       </div>
       <input type="reset" />
