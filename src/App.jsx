@@ -2,16 +2,16 @@ import { useState } from "react"
 import "./App.css"
 import logo from "./assets/logo.svg"
 
-const initialState = {
-  bill: 0,
-  tip: 0,
-  people: 0
-}
+const stateSetter = setState => event => setState(event.target.value)
 
 function App() {
   const [numPeople, setNumPeople] = useState(0)
   const [tip, setTip] = useState(0)
   const [bill, setBill] = useState(0)
+
+  const handleTip = stateSetter(setTip)
+  const handleBill = stateSetter(setBill)
+  const handleNumPeople = stateSetter(setNumPeople)
 
   return (
     <div>
