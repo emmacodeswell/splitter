@@ -16,6 +16,9 @@ function App() {
   const tipPerPerson = bill * tip / 100 / numPeople
   const totalPerPerson = bill / numPeople + tipPerPerson 
 
+  const formattedTip = formatter.format(tipPerPerson)
+  const formattedTotal = formatter.format(totalPerPerson)
+
   return (
     <div>
       <h1>
