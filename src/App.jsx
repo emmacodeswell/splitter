@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./App.css"
 import logo from "./assets/logo.svg"
+import formatter from "./helpers/formatter"
 
 const stateSetter = setState => event => setState(event.target.value)
 
@@ -12,12 +13,16 @@ function App() {
   const handleTip = stateSetter(setTip)
   const handleBill = stateSetter(setBill)
   const handleNumPeople = stateSetter(setNumPeople)
+  let formattedTip
+  let formattedTotal
 
-  const tipPerPerson = bill * tip / 100 / numPeople
-  const totalPerPerson = bill / numPeople + tipPerPerson 
+  if ([numPeople, tip, bill].every(isDefined) && numPeople > 0) {
+    const tipPerPerson = bill * tip / 100 / numPeople
+    const totalPerPerson = bill / numPeople + tipPerPerson 
 
-  const formattedTip = formatter.format(tipPerPerson)
-  const formattedTotal = formatter.format(totalPerPerson)
+    formattedTip = formatter.format(tipPerPerson)
+    formattedTotal = formatter.format(totalPerPerson)
+  }
 
   return (
     <div>
