@@ -26,6 +26,11 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   cursor: pointer;
 }
 
+.reset:active {
+  background-color: var(--lightGray);
+  transition: 0.2s ease-in-out;
+}
+
 input {
   width: 100%;
   background: var(--lighterGray);
@@ -53,10 +58,6 @@ input[type="radio"]:checked {
 
 input[type="radio"]::before {
   content: attr(value) "%";
-}
-
-input:focus {
-  outline: none;
 }
 
 .results {
@@ -129,7 +130,11 @@ a {
 
 .inputs input {
   margin: 1rem 0;
-  /* padding: 0.5rem 0; */
+  padding: 0.5rem 0;
+}
+
+.inputs input:focus {
+  outline-color: var(--primary);
 }
 
 .tips {
