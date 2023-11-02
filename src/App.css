@@ -19,18 +19,18 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 /* Buttons */
 .reset {
-  margin-top: 7rem;
   width: 100%;
   background-color: var(--primary);
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 input {
   width: 100%;
   background: var(--lighterGray);
   color: var(--darkBlue);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
   font-family: "Space Mono", monospace;
@@ -39,15 +39,37 @@ input {
   text-align: right;
 }
 
+input[type="radio"] {
+  appearance: none;
+  padding: 0.5rem 1rem;
+  background: var(--darkBlue);
+  color: var(--white);
+}
+
+input[type="radio"]:checked {
+  background: var(--primary);
+  color: var(--darkBlue);
+}
+
+input[type="radio"]::before {
+  content: attr(value) "%";
+}
+
 input:focus {
   outline: none;
 }
 
 .results {
+  display: flex;
+  flex-flow: column;
   width: 50%;
   background: var(--darkBlue);
   padding: 2rem;
   border-radius: 0.5rem;
+}
+
+.results :last-child {
+  margin-top: auto;
 }
 
 /*  Styles */
@@ -103,6 +125,28 @@ a {
 
 .inputs label {
   margin: 1rem 0;
+}
+
+.inputs input {
+  margin: 1rem 0;
+  /* padding: 0.5rem 0; */
+}
+
+.tips {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.tips > input {
+  text-align: center;
+  flex: 1 0 25%;
+  margin: 0;
+}
+
+.tips > input[type="radio"] {
+  cursor: pointer;
 }
 
 .bill {

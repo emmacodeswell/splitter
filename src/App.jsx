@@ -58,17 +58,21 @@ function App() {
               Bill
               <input className="bill" type="number" onChange={handleBill} placeholder="0"/>
             </label>
-            <div className="tips">
-              <label>
-                Select Tip %
+            
+            <label>
+              Select Tip %
+              
+              <div className="tips">
                 <input type="radio" name="tip" value="5" onChange={handleRadioTip} />
                 <input type="radio" name="tip" value="10" onChange={handleRadioTip} />
                 <input type="radio" name="tip" value="15" onChange={handleRadioTip} />
                 <input type="radio" name="tip" value="25" onChange={handleRadioTip} />
                 <input type="radio" name="tip" value="50" onChange={handleRadioTip} />
                 <input type="number" name="customTip" placeholder="Custom" onChange={handleCustomTip} />
-              </label>
-            </div>
+              </div>
+            </label>
+                
+
             <label>
               Number of People
               <input className="numPeople" type="number" onChange={handleNumPeople} placeholder="0"/>
