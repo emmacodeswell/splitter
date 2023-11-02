@@ -48,8 +48,10 @@ function App() {
 
   return (
     <div>
-      <h1>
-        <img src={logo} alt="Splitter logo" />
+      <h1 className="logo">
+        Spli
+        <br/>
+        tter
       </h1>
       <div className="wrapper">
         <form onReset={resetState}>
@@ -100,8 +102,7 @@ function App() {
         </form>
       </div>
       <footer>
-        Design by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/emmacodeswell" target="_blank">Emma Clarke</a> in 2023 💙.
+        Coded by <a href="https://github.com/emmacodeswell" target="_blank">Emma Clarke</a> in 2023 🤎.
       </footer>
     </div>
   );

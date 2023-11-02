@@ -8,12 +8,12 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 :root {
   /* Colors */
-  --primary: hsl(172, 67%, 45%);
-  --darkBlue: hsl(183, 100%, 15%);
-  --darkGray: hsl(186, 14%, 43%);
-  --darkerGray: hsl(184, 14%, 56%);
-  --lightGray: hsl(185, 41%, 84%);
-  --lighterGray: hsl(189, 41%, 97%);
+  --primary: hsl(24, 67%, 45%);
+  --darkBlue: hsl(27, 100%, 15%);
+  --darkGray: hsl(0, 14%, 43%);
+  --darkerGray: hsl(4, 14%, 60%);
+  --lightGray: hsl(23, 41%, 84%);
+  --lighterGray: hsl(20, 37%, 97%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -155,12 +155,14 @@ a {
 }
 
 .bill {
+  color: var(--darkerGray);
   background-image: url(./assets/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: left 1rem center;
 }
 
 .numPeople {
+  color: var(--darkerGray);
   background-image: url(./assets/icon-person.svg);
   background-repeat: no-repeat;
   background-position: left 1rem center;
