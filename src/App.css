@@ -49,3 +49,93 @@ input:focus {
   padding: 2rem;
   border-radius: 0.5rem;
 }
+
+/*  Styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  height: 100%;
+  background: var(--lightGray);
+  color: var(--darkerGray);
+}
+
+h1 {
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4rem;
+}
+
+form {
+  display: flex;
+  flex-flow: row;
+  background: var(--white);
+  border-radius: 1em;
+  padding: 2em;
+  margin: 4em auto;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--darkBlue);
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.inputs {
+  padding-right: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  margin: 1rem 0;
+}
+
+.bill {
+  background-image: url(./assets/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+}
+
+.numPeople {
+  background-image: url(./assets/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+}
+
+.total {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.total label {
+  color: var(--white);
+  margin-bottom: 0.5rem; 
+}
+
+label small {
+  color: var(--primary);
+}
+
+output {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
