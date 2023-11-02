@@ -54,6 +54,7 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background: var(--primary);
   color: var(--darkBlue);
+  transition: 0.2s ease-in-out all;
 }
 
 input[type="radio"]::before {
