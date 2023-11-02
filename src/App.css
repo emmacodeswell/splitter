@@ -5,3 +5,14 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+:root {
+  /* Colors */
+  --primary: hsl(172, 67%, 45%);
+  --darkBlue: hsl(183, 100%, 15%);
+  --darkGray: hsl(186, 14%, 43%);
+  --darkerGray: hsl(184, 14%, 56%);
+  --lightGray: hsl(185, 41%, 84%);
+  --lighterGray: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
