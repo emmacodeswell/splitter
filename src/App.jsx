@@ -29,8 +29,8 @@ function App() {
     handleTip(event)
   }
 
-  let formattedTip
-  let formattedTotal
+  let formattedTip = formatter.format(0)
+  let formattedTotal = formatter.format(0)
 
   if ([numPeople, tip, bill].every(isDefined) && numPeople > 0) {
     const tipPerPerson = bill * tip / 100 / numPeople
