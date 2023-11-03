@@ -45,6 +45,7 @@ input {
 }
 
 input[type="radio"] {
+  border: none;
   appearance: none;
   padding: 0.5rem 1rem;
   background: var(--darkBlue);
