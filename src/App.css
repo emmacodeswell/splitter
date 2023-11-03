@@ -208,4 +208,8 @@ output {
   .results {
     width: 100%;
   }
+
+  footer {
+    padding: 0 1rem;
+  }
 }
