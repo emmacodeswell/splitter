@@ -6,4 +6,4 @@ This app is based on a Frontend Mentor design and challenge, but has my own spec
 - The original challenge can be found [here](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Happy coding!
 
 ### Live link
-[Splitter](https://tourmaline-kulfi-1e4d7f.netlify.app/)
+<a href="https://tourmaline-kulfi-1e4d7f.netlify.app/" target="_blank">Splitter</a>
