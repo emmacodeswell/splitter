@@ -26,8 +26,13 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   cursor: pointer;
 }
 
-.reset:active {
+.reset:hover {
   background-color: var(--lightGray);
+  transition: 0.2s ease-in-out;
+}
+
+.reset:active {
+  background-color: var(--darkGray);
   transition: 0.2s ease-in-out;
 }
 
