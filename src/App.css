@@ -9,7 +9,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 :root {
   /* Colors */
   --primary: hsl(24, 67%, 45%);
-  --darkBlue: hsl(27, 100%, 15%);
+  --darkBlue: hsl(9, 100%, 15%);
   --darkGray: hsl(0, 14%, 43%);
   --darkerGray: hsl(4, 14%, 60%);
   --lightGray: hsl(23, 41%, 84%);
