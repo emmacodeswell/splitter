@@ -9,9 +9,9 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 :root {
   /* Colors */
   --primary: hsl(24, 67%, 45%);
-  --darkBlue: hsl(9, 100%, 15%);
-  --darkGray: hsl(0, 14%, 43%);
-  --darkerGray: hsl(4, 14%, 60%);
+  --darkBrown: hsl(9, 100%, 15%);
+  --darkGray: hsl(4, 14%, 60%);
+  --darkerGray: hsl(0, 14%, 43%);
   --lightGray: hsl(23, 41%, 84%);
   --lighterGray: hsl(20, 37%, 97%);
   --white: hsl(0, 0%, 100%);
@@ -34,7 +34,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 input {
   width: 100%;
   background: var(--lighterGray);
-  color: var(--darkBlue);
+  color: var(--darkBrown);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
@@ -48,13 +48,13 @@ input {
 input[type="radio"] {
   appearance: none;
   padding: 0.5rem 1rem;
-  background: var(--darkBlue);
+  background: var(--darkBrown);
   color: var(--white);
 }
 
 input[type="radio"]:checked {
   background: var(--primary);
-  color: var(--darkBlue);
+  color: var(--darkBrown);
 }
 
 input[type="radio"]::before {
@@ -65,7 +65,7 @@ input[type="radio"]::before {
   display: flex;
   flex-flow: column;
   width: 50%;
-  background: var(--darkBlue);
+  background: var(--darkBrown);
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 h1 {
-  color: var(--darkBlue);
+  color: var(--darkBrown);
   text-transform: uppercase;
   text-align: center;
   margin: 4rem;
@@ -110,7 +110,7 @@ footer {
 }
 
 a {
-  color: var(--darkBlue);
+  color: var(--darkBrown);
 }
 
 .wrapper {
