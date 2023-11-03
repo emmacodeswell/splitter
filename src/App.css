@@ -8,8 +8,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 :root {
   /* Colors */
-  --primary: hsl(24, 67%, 45%);
-  --darkBrown: hsl(9, 100%, 15%);
+  --primary: hsl(11, 25%, 52%);
+  --darkBrown: hsl(32, 100%, 15%);
   --darkGray: hsl(4, 14%, 60%);
   --darkerGray: hsl(0, 14%, 43%);
   --lightGray: hsl(23, 41%, 84%);
