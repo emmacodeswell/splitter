@@ -3,8 +3,11 @@ import "./App.css"
 import logo from "./assets/logo.svg"
 import formatter from "./helpers/formatter"
 
+// This function updates the state. This function returns another function that takes an event argument and sets the state to the value of event.target.value
+// Essentially, it generates a function responsible for updating a specific piece of state
 const stateSetter = setState => event => setState(event.target.value)
 
+// A convenient way to check if a variable has been assigned a value or if it's still in an uninitialized state
 const isDefined = value => value !== undefined
 
 function App() {
@@ -12,15 +15,18 @@ function App() {
   const [tip, setTip] = useState('')
   const [bill, setBill] = useState('')
 
+  // These functions update the corresponding state variables
   const handleTip = stateSetter(setTip)
   const handleBill = stateSetter(setBill)
   const handleNumPeople = stateSetter(setNumPeople)
 
+  // Sets the radio tip 
   const handleRadioTip = event => {
     event.currentTarget.form.elements.customTip.value = ''
     handleTip(event)
   }
 
+  // Sets a custom tip and unchecks the radio tip if its checked
   const handleCustomTip = event => {
     event.currentTarget.form.elements.tip.forEach(input => {
       input.checked = false
@@ -29,9 +35,12 @@ function App() {
     handleTip(event)
   }
 
+  // Defines formatted tips to be currency using the helper formatter function
   let formattedTip = formatter.format(0)
   let formattedTotal = formatter.format(0)
 
+  // Calculates the tip per person based on the bill amount, tip percentage, and the number of people
+  // Code runs if all of numPeople, tip, and bill are defined and if numPeople is greater than 0
   if ([numPeople, tip, bill].every(isDefined) && numPeople > 0) {
     const tipPerPerson = bill * tip / 100 / numPeople
     const totalPerPerson = bill / numPeople + tipPerPerson 
@@ -40,6 +49,7 @@ function App() {
     formattedTotal = formatter.format(totalPerPerson)
   }
 
+  // Resets the state
   const resetState = event => {
     setTip()
     setNumPeople()
